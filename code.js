@@ -336,6 +336,7 @@ function check() {
 		if(confirm("Da pređemo u sledeći krug?") == true){
 			kviz_start()
 		} else {
+			finalGG = {}
 			document.getElementById("kviz_pogon").style.display = "none"
 			document.getElementById("kviz_podesavanja").style.display = "block"
 		}
@@ -343,6 +344,7 @@ function check() {
 }
 
 function kviz_druga_podesavanja() {
+	finalGG = {}
 	document.getElementById("tabela").innerHTML = ""
 	document.getElementById("kviz_pogon").style.display = "none"
 	document.getElementById("kviz_podesavanja").style.display = "block"
