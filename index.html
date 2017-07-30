@@ -1,0 +1,111 @@
+<html>
+	<head>
+			<script type="text/javascript" src="code.js"></script>
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<meta charset="utf-8">
+			<title> Glavni gradovi (Scorpio edition) </title>
+	</head>
+	<body>
+		<div id="uvod">
+			<h1 id="naslov">Glavni gradovi (Scorpio edition): </h1>
+			<div id="meni">
+				<button class="button_blue meni_button" onclick="pretraga_button()">Pretraga</button>
+				<button class="button_orange meni_button" onclick="naucime_button()">Nauči me</button>
+				<button class="button_red meni_button" onclick="kviz_button()">Kviz</button>
+			</div>
+		</div>
+		<br>
+		<div id="pretraga_tab" class="tabs">
+			<input type="text" class="default_input" id="input_pretraga" oninput="pretraga(this.value)" placeholder="Upiši grad ili državu...">
+			<p id="rezultat_pretrage">...</p>
+		</div>
+		<div id="naucime_tab" class="tabs">
+			<div id="naucime_big">
+				<label>Vreme: <input type="range" min="1" max="10" oninput="naucime_show(this.value)" value="1"></label>
+				<label>Veličina fonta: <input type="range" min="24" max="82" oninput="naucime_show_size(this.value)" value="24"></label>
+				<p id="show">Glavni grad države <span id="drzava"></span> je <span id="grad"></span>;</p>
+			</div>
+			<table style="overflow: auto; width: 100%;" align="center">
+				<tr>
+					<td>
+						<div id="evropa_div" class="naucime_div">
+							<p>Evropa:</p>
+							<ol id="evropa">
+								
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div id="azija_div" class="naucime_div">
+							<p>Azija:</p>
+							<ol id="azija">
+								
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div id="afrika_div" class="naucime_div">
+							<p>Afrika:</p>
+							<ol id="afrika">
+								
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div id="l_amerika_div" class="naucime_div">
+							<p>Latinska Amerika:</p>
+							<ol id="l_amerika">
+								
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div id="a_amerika_div" class="naucime_div">
+							<p>Anglo Amerika:</p>
+							<ol id="a_amerika">
+								
+							</ol>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="kviz_tab" class="tabs">
+			<div id="kviz_podesavanja">
+				<div id="kviz_izbor_kontinenata">
+					<p class="kviz_podesavanja_p">> Izaberi kontinente: </p>
+					<label>Evropa: <input type="checkbox" id="Evropa" value="Evropa" class="kviz_kontinenti_select" onchange="()"></label>
+					<label>Azija: <input type="checkbox" id="Azija" value="Azija" class="kviz_kontinenti_select" onchange="()"></label>
+					<label>Afrika: <input type="checkbox" id="Afrika" value="Afrika" class="kviz_kontinenti_select" onchange="()"></label>
+					<label>Latinska Amerika: <input type="checkbox" id="L_Amerika" class="kviz_kontinenti_select" value="Latinska Amerika" onchange="()"></label>
+					<label>Angloamerika: <input type="checkbox" id="A_Amerika" value="Angloamerika" class="kviz_kontinenti_select" onchange="()"></label>
+				</div>
+				<p class="kviz_podesavanja_p">> Pitaj me:</p>
+				<select id="kviz_tip">
+					<option>Gradove</option>
+					<option>Države</option>
+				</select>
+				<p class="kviz_podesavanja_p">> Broj pitanja u jednom krugu: <span id="brpitanja_label">5</span></p>
+				<input type="range" min="1" max="5" value="5" oninput="brpitanja_label(this.value)" id="brpitanja_range">
+				<p class="kviz_podesavanja_p">> Odgovore:</p>
+				<label>Pišeš: <input type="radio" name="tip_odgovora" id="pisanje_odg" onchange="dis_br_pon_odg(false)"></label>
+				<br>
+				<label>Selektuješ: <input type="radio" name="tip_odgovora" id="selektovanje_odg" checked onchange="dis_br_pon_odg(this.checked)"></label>
+				<br>
+				<p id="br_pon_odg_p" class="kviz_podesavanja_p">> Broj ponuđenih odgovora: </p><input type="number" id="br_pon_odg_input" min="2" max="10" value="5" class="default_input">
+				<br>
+				<button class="button_green" id="kviz_dugme_potvrdi" onclick="kviz_start()">Potvrdi</button>
+			</div>
+			<div id="kviz_pogon">
+				<table id="tabela">
+				
+				</table>
+				<br>
+				<button onclick="check()" class="button_blue">Proveri</button>
+				<button onclick="kviz_druga_podesavanja()" class="button_purple">Druga podešavanja</button>
+			</div>
+		</div>
+		<p id="mikac_inc">by: <b><span id="mikac_inc_span"></span></b></p>
+		<p id="scorpio">Project: //Scorpio/ © .</p>
+	</body>
+</html>

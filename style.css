@@ -1,0 +1,252 @@
+/* Predefinisane klase: */
+
+/* BUTTONS: */
+.button_grey {
+	font-size: 14px;
+	font-family: courier new;
+	background-color: black;
+	color: grey;
+    border: 1px solid grey;
+    transition-duration: 0.4s;
+}
+
+.button_grey:hover {
+	font-size: 14px;
+	background-color: grey;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+
+.button_green {
+	font-size: 14px;
+	font-family: courier new;
+	background-color: black;
+	color: green;
+    border: 1px solid green;
+    transition-duration: 0.4s;
+}
+
+.button_green:hover {
+	font-size: 14px;
+	background-color: green;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.button_red {
+	font-size: 14px;
+	font-family: courier new;
+	background-color: black;
+	color: red;
+    border: 1px solid red;
+    transition-duration: 0.4s;
+}
+
+.button_red:hover {
+	font-size: 14px;
+	background-color: red;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.button_blue {
+	font-size: 14px;
+	font-family: courier new;
+	background-color: black;
+	color: blue;
+    border: 1px solid blue;
+    transition-duration: 0.4s;
+}
+
+.button_blue:hover {
+	font-size: 14px;
+	background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.button_purple {
+	font-size: 14px;
+	font-family: courier new;
+	background-color: black;
+	color: purple;
+    border: 1px solid purple;
+    transition-duration: 0.4s;
+}
+
+.button_purple:hover {
+	font-size: 14px;
+	background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    cursor: pointer;
+}
+
+.button_orange {
+	font-size: 14px;
+	font-family: courier new;
+	background-color: black;
+	color: orange;
+    border: 1px solid orange;
+    transition-duration: 0.4s;
+    font-weight: 550;
+}
+
+.button_orange:hover {
+	font-size: 14px;
+	background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+/* INPUT */
+.default_input {
+	height: 18pt;
+	font-family: courier new;
+	transition-duration: 0.4s;
+	color: #0f0;
+	background: black;
+	border: 1.5px solid #0f0;
+	text-align: center;
+}
+
+.default_input:focus {
+	background: white;
+	color: black;
+	border-radius: 11px;
+	transition-duration: all 0.7s;
+}
+
+/* disable outline when focused */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+	background-color: #000;
+}
+
+p, label, li, h1 {
+	color: #0f0;
+	font-family: courier new;
+}
+
+#uvod {
+	text-align: center;
+	/*
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	*/
+}
+
+#naucime_tab, #pretraga_tab {
+	display: none;
+	text-align: center;
+}
+
+.naucime_div {
+	display: inline-block;
+}
+
+#show {
+	font-size: 24px;
+}
+
+#drzava {
+	color: cyan;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+#grad {
+	color: orange;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+#kviz_tab {
+	display: none;
+	text-align: center;
+}
+
+#brpitanja_label, #br_pon_odg_input {
+	color: cyan;
+	background-color: black;
+	display: inline-block;
+	width: 40px;
+	text-align: left;
+	font-size: 20px;
+}
+
+#br_pon_odg_p {
+	display: inline-block;
+}
+
+#tabela {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#kviz_pogon {
+	display: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td {
+	padding: 10px;
+}
+
+.meni_button {
+	padding: 10px;
+}
+
+#mikac_inc {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#scorpio {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.kviz_podesavanja_p {
+	font-size: 20px;
+	color: orange;
+}
+
+#kviz_dugme_potvrdi {
+	padding: 5px;
+	margin-top: 5px;
+}
+
+select {
+	background-color: black;
+	color: #0f0;
+	border: 1px dashed #0f0;
+	font-family: courier new;
+	padding: 2px;
+	font-size: 14px;
+}
+
+.kviz_kontinenti_select {
+	background-color: black;
+	color: #0f0;
+	border: 1px dashed #0f0;
+}
